@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Resume</title>
+
+  <style media="all">
+    #content {
+      width: 1024px;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    table {
+      border-spacing: 0;
+      border-collapse: collapse;
+      border: 1px solid #bbb;
+    }
+    td, th {
+      border: 1px solid #bbb;
+      padding: 5px;
+      width: 180px;
+    }
+
+    td:last-child {
+      width: 80px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="draw" style="display:none;">
+# 職務経歴書
+<div style="text-align: right;">
+更新日 2018年10月04日
+</div>
+
+- 氏名：佐伯　真
+- 生年月日：1988年06月27日
+- Twitter：[@saeeeeeki](https://twitter.com/saeeeeeki)
+- Github：https://github.com/saeeeeeki
+
+---
+
+## スキル
+
+<table>
+  <tr>
+    <td rowspan="7" align="center" bgcolor="#ffc5c5">言語</td>
+    <td>PHP</td>
+    <td>4年</td>
+  </tr>
+  <tr>
+    <td>Java</td>
+    <td>3年</td>
+  </tr>
+  <tr>
+    <td>Ruby</td>
+    <td>1年</td>
+  </tr>
+  <tr>
+    <td>Java Script</td>
+    <td>4年</td>
+  </tr>
+  <tr>
+    <td>HTML</td>
+    <td>4年</td>
+  </tr>
+  <tr>
+    <td>CSS</td>
+    <td>4年</td>
+  </tr>
+  <tr>
+    <td>SQL</td>
+    <td>5年</td>
+  </tr>
+
+  <tr>
+    <td rowspan="4" align="center" bgcolor="#ffc5c5">フレームワーク</td>
+    <td>Laravel</td>
+    <td>2年</td>
+  </tr>
+  <tr>
+    <td>Cake PHP</td>
+    <td>1年</td>
+  </tr>
+  <tr>
+    <td>Ruby on Rails</td>
+    <td>1年</td>
+  </tr>
+  <tr>
+    <td>Struts</td>
+    <td>2年</td>
+  </tr>
+
+  <tr>
+    <td rowspan="2" align="center" bgcolor="#ffc5c5">データベース</td>
+    <td>MySQL</td>
+    <td>5年</td>
+  </tr>
+  <tr>
+    <td>PostgreSQL</td>
+    <td>2年</td>
+  </tr>
+
+  <tr>
+    <td rowspan="1" align="center" bgcolor="#ffc5c5">その他</td>
+    <td>Git</td>
+    <td>4年</td>
+  </tr>
+</table>
+
+<br>
+
+---
+
+## 経歴
+### シアトルコンサルティング
+- 2012年04月 ~ 2015年02月
+
+SESの会社でWebアプリケーション開発を経験。<br>
+主に使っていた言語はJava。常駐先が扱っているサービスの保守、機能追加が主な仕事。
+
+<br>
+
+### ピラミッドフィルム クアドラ
+- 2015年03月 ~ 2015年07月
+
+広告代理店に転職。主な業務はLPの作成。<br>
+ほとんどがマークアップで、JavaScript (jQuery) は何かしらのエフェクトを付けるために使用。
+
+<br>
+
+### フリーランス
+- 2015年10月 ~ 2018年08月
+
+受託開発の企業と契約。<br>
+新規開発やリプレイス案件が多く、ほとんどの案件でPHPを使用し、フレームワークは指定がない限りLaravelを使用。<br>
+オブジェクト指向によるを試みながら、実装、PHP Unitによる単体テスト、コードレビューを主に行う。
+
+<br>
+
+### 海外留学
+- 2018年09月 ~ 2019年2月
+
+英語を学ぶため、イギリスに留学。
+
+<br><br>
+
+</div>
+
+  <div id="content"></div>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    document.getElementById('content').innerHTML = marked(document.querySelector('#draw').innerHTML);
+  </script>
+</body>
+</html>
